@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Writing Website</title>
+</head>
+<body>
+  <h1>Writing Website</h1>
+  <p>This is a website for writing. You can use it to write anything you want, from short stories to novels.</p>
+  <p>To get started, simply click on the "New Document" button below.</p>
+  <button onclick="newDocument()">New Document</button>
+  <script>
+    function newDocument() {
+      var doc = document.createElement("div");
+      doc.textContent = "This is a new document.";
+      document.body.appendChild(doc);
+    }
+  </script>
+</body>
+</html>
